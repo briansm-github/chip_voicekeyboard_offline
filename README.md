@@ -1,4 +1,4 @@
-# chip_voicekeyboard_online
+# chip_voicekeyboard_offline
 Just some code for the 'offline' version of a USB voice keyboard
 for NTC CHIP, as shown in video:
 https://youtu.be/VgyPFYderjc
