@@ -1,0 +1,15 @@
+#!/bin/bash
+/root/led_off
+/bin/mount -t proc proc /proc
+/bin/mount -t sysfs sysfs /sys
+/sbin/modprobe configfs
+/bin/sleep 0.1
+mount -t configfs configfs /sys/kernel/config
+/sbin/modprobe libcomposite
+/sbin/modprobe usb_f_hid
+/bin/sleep 0.1
+
+
+/root/make_hid
+cd /root/record
+./go
